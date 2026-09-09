@@ -1,0 +1,33 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Generated corpora, datasets, and model artifacts
+azure_docs_corpus.jsonl
+azure_qa_pairs.jsonl
+azure_qa_dataset/
+azure-docs-src/
+azure-slm-lora/
+azure-slm-merged/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Notebook-generated files
+.ipynb_checkpoints/
+
+# Local tooling and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
