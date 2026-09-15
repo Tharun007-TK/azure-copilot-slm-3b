@@ -8,13 +8,16 @@ saved) DatasetDict, not the raw jsonl.
 
 import json
 import hashlib
+from dotenv import load_dotenv
+
+load_dotenv()
 from pathlib import Path
 
 from datasets import Dataset, DatasetDict
 from huggingface_hub import login, HfApi
 
 QA_FILE = Path("./azure_qa_pairs.jsonl")
-HF_DATASET_REPO = "your-username/azure-docs-qa"   # <-- change this
+HF_DATASET_REPO = "Tharun007/azure-docs-qa"   # <-- change this
 PUSH_PUBLIC = False                                # <-- flip deliberately, see note above
 LOCAL_SAVE_DIR = Path("./azure_qa_dataset")
 
